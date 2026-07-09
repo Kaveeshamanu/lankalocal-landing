@@ -1,16 +1,58 @@
-# React + Vite
+# LankaLocal — Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Landing page for **LankaLocal**, a platform connecting travelers with verified local guides across Sri Lanka. Built with React and Tailwind CSS from a Figma design, with full responsive support.
 
-Currently, two official plugins are available:
+## Sections
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Navbar** — sticky, blurred header with a mobile menu
+- **Hero** — headline, search bar, social proof, and a floating image collage
+- **Features** — bento-style grid highlighting why to travel with LankaLocal
+- **Experiences** — curated destination cards (Tea Country Trails, Wildlife Safari, Ancient City Tour)
+- **Guides** — profile cards for local guides with ratings and specialties
+- **Footer** — site links, social icons, and a guide sign-up CTA
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- [React 19](https://react.dev/)
+- [Vite](https://vite.dev/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```bash
+npm install
+npm run dev
+```
+
+The dev server runs at `http://localhost:5173` by default.
+
+### Other scripts
+
+```bash
+npm run build     # production build to dist/
+npm run preview   # preview the production build locally
+npm run lint       # run oxlint
+```
+
+## Project Structure
+
+```
+src/
+├── assets/
+│   ├── images/       # photography used across sections
+│   └── icons/         # SVG icons exported from the Figma design
+├── components/
+│   ├── Navbar.jsx
+│   ├── Hero.jsx
+│   ├── Features.jsx
+│   ├── Experiences.jsx
+│   ├── Guides.jsx
+│   └── Footer.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+```
+
+## Design
+
+Implemented from a Figma design ("3D Geometric Landing Page") to match layout, typography (Space Grotesk / Outfit), and color palette, adapted into responsive, reusable React components.
